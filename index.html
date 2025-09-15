@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Project - Portfolio</title> 
+</head>
+<body>
+    <header>
+        <h1>My First HTML Project Portfolio</h1> <!-- Main header -->
+    </header>
+
+    <main>
+        <!-- Qualification Table -->
+        <table>
+            <caption>QUALIFICATIONS</caption>
+            <thead>
+                <tr>
+                    <th>Class</th>
+                    <th>School/College Name</th>
+                    <th>Percentage (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10th</td>
+                    <td>abc school</td>
+                    <td>97</td>
+                </tr>
+                <tr>
+                    <td>Diploma</td>
+                    <td>G.P.Karad</td>
+                    <td>86</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Skills List -->
+        <section>
+            <h2>SKILLS</h2>
+            <ol>
+                <li>HTML
+                    <ul>
+                        <li>Attributes</li>
+                        <li>Label</li>
+                        <li>Forms</li>
+                        <li>Tags</li>
+                        <li>table</li>
+                    </ul>
+                </li>
+                <li>C Programming
+                    <ul>
+                        <li>Operators</li>
+                        <li>Array</li>
+                        <li>Pointer</li>
+                        <li>Loops</li>
+                    </ul>
+                </li>
+                <li>Critical Thinking</li>
+            </ol>
+        </section>
+
+        <!-- Personal Details Form -->
+        <section>
+            <header><h3>PERSONAL DETAILS</h3></header>
+            <p>Fill it carefully:</p>
+
+            <form action="#"> <!-- action # for safe hosting, won't send data -->
+                <!-- Name Input -->
+                <label for="name">*Name:</label><br>
+                <input type="text" id="name" name="Name" placeholder="Enter your name"><br>
+
+                <!-- Interested in Learning -->
+                <p>*Interested in Learning:</p>
+                <label for="php">
+                    <input type="checkbox" value="php" id="php" name="interested_to_learn"> Python
+                </label><br>
+                <label for="cprog">
+                    <input type="checkbox" value="cprog" id="cprog" name="interested_to_learn"> C Programming
+                </label><br>
+                <label for="AI">
+                    <input type="checkbox" value="Artificial Intelligence" id="AI" name="interested_to_learn"> Artificial Intelligence
+                </label><br>
+                <label for="html">
+                    <input type="checkbox" value="html" id="html" name="interested_to_learn"> HTML
+                </label>
+                <br>
+
+                <!-- Gender -->
+                <p>*Gender:</p>
+                <label for="male">
+                    <input type="radio" value="male" name="gender" id="male"> Male
+                </label>
+                <label for="female">
+                    <input type="radio" value="female" name="gender" id="female"> Female
+                </label><br>
+
+                <!-- Preferred Tool -->
+                <p>*used to clarify doubts:</p>
+                <select name="preferred_search_tool">
+                    <option value="chatgpt">ChatGPT</option>
+                    <option value="geminii">Geminii</option>
+                </select><br>
+
+                <!-- Embedded YouTube Video -->
+                <p>*Best Option to Learn Java:</p>
+                <iframe width="250" height="100" 
+                    src="https://www.youtube.com/embed/yRpLlJmRo2w" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe><br>
+
+                <!-- Clickable LinkedIn Profile -->
+                <p>*Click here to see developer details:</p>
+                <a href="https://www.linkedin.com/in/shreya-raut-13b45031a" target="_blank">
+                    <img src="profile.png" alt="My Profile" height="80" width="80"> <!--when i click on the img my linkedin profile will open -->
+                </a><br>
+
+                <!-- Feedback Section -->
+                <p>*Feedback:</p>
+                <textarea name="feedback" placeholder="Please type your feedback" rows="4"></textarea><br>
+
+                <!-- Submit Button -->
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p> 
+           <a href="https://www.linkedin.com/in/shreya-raut-13b45031a" target="_blank">LinkedIn</a> |
+           <a href="mailto:shreya@example.com">Email Me</a>
+        </p>
+    </footer>
+</body>
+</html>
